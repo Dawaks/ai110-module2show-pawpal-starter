@@ -13,9 +13,9 @@ The relationships are simple: one Owner can have multiple Pets, each Pet can hav
 
 **b. Design changes**
 
-- Did your design change during implementation? Yes
+- Did your design change during implementation? Yes. My initial design changed slightly after reviewing the class skeleton. The original `filter_tasks()` method did not have any parameters, so there was no clear way to specify what the scheduler should filter.
 - If yes, describe at least one change and why you made it.
-The initial filter_tasks() method had no parameters, so there was no way to specify what should be filtered. After reviewing the design with AI, I changed it to accept completed and pet_name so the scheduler could support the filtering behavior required by the project.
+I updated it to accept `completed` and `pet_name` as optional parameters. This makes the method more useful because it can later filter tasks by completion status or by pet, which matches the project requirements while keeping the design simple.
 ---
 
 ## 2. Scheduling Logic and Tradeoffs
