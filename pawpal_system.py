@@ -43,7 +43,7 @@ class Scheduler:
     def sort_by_time(self):
         pass
 
-    def filter_tasks(self):
+    def filter_tasks(self, completed=None, pet_name=None):
         pass
 
     def detect_conflicts(self):
