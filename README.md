@@ -90,19 +90,45 @@ Sample test output:
 
 | Feature | Method(s) | Notes |
 |---------|-----------|-------|
-| Task sorting | Scheduler.sort_by_time() | Sorts tasks by time |
-| Filtering | Scheduler.filter_tasks() | Filters by pet or completion status |
-| Conflict handling | Scheduler.detect_conflicts() | Detects exact-time conflicts |
-| Recurring tasks | | e.g., daily vs. weekly |
+| Task sorting | Scheduler.sort_by_time() | 
+
+Sorts all pet-care tasks by scheduled time from earliest to latest. |
+| Filtering | Scheduler.filter_tasks() | Filters tasks by pet name, completion status, or both. |
+| Conflict handling | Scheduler.detect_conflicts() | Detects tasks scheduled at the exact same time and reports them as conflicts. |
+| Recurring tasks | Scheduler.mark_task_complete(), Task.mark_complete() | Marks the current task complete and automatically creates the next oScheduler.mark_task_complete(), Task.mark_complete()ccurrence for daily or weekly tasks. Daily tasks move forward by 1 day and weekly tasks by 7 days. |
 
 ## 📸 Demo Walkthrough
 
-Describe your app in numbered steps so a reader can follow along without watching a video:
+A user can interact with PawPal+ through the Streamlit interface as follows:
 
-1. <!-- Describe this step -->
-2. <!-- Describe this step -->
-3. <!-- Describe this step -->
-4. <!-- Describe this step -->
-5. <!-- Add more steps as needed -->
+1. Enter the owner information and add a pet.
+The user enters the pet's name and species. PawPal+ prevents duplicate pet names and stores the pet under the current owner.
+
+2. Add care tasks for a pet.
+The user selects a pet and enters a task description, scheduled time, duration, priority, and frequency such as once, daily, or weekly.
+
+3. View the current tasks.
+PawPal+ displays the tasks associated with the owner's pets, including the pet name, task description, time, duration, priority, and frequency.
+
+4. Generate the schedule.
+The scheduler organizes incomplete tasks by scheduled time so the user can easily see the order in which the day's pet-care activities should be completed.
+
+5. Review scheduling warnings and recurring tasks.
+PawPal+ identifies tasks scheduled at the exact same time and displays a conflict warning. When a daily or weekly task is completed through the scheduler logic, the next occurrence can automatically be created for the appropriate future date.
+
+CLI Example
+
+The backend can also be demonstrated by running:
+
+python main.py
+
+Example output:
+
+Today's Schedule
+----------------
+07:00  Luna - Breakfast (daily)
+08:00  Rex - Morning walk (daily)
+12:00  Luna - Brush fur (weekly)
+18:30  Rex - Evening walk (daily)
 
 **Screenshot or video** *(optional)*: <!-- Insert a screenshot or link to a demo video here -->
