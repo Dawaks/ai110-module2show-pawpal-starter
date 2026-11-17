@@ -90,9 +90,7 @@ Sample test output:
 
 | Feature | Method(s) | Notes |
 |---------|-----------|-------|
-| Task sorting | Scheduler.sort_by_time() | 
-
-Sorts all pet-care tasks by scheduled time from earliest to latest. |
+| Task sorting | Scheduler.sort_by_time() | Sorts all pet-care tasks by scheduled time from earliest to latest. |
 | Filtering | Scheduler.filter_tasks() | Filters tasks by pet name, completion status, or both. |
 | Conflict handling | Scheduler.detect_conflicts() | Detects tasks scheduled at the exact same time and reports them as conflicts. |
 | Recurring tasks | Scheduler.mark_task_complete(), Task.mark_complete() | Marks the current task complete and automatically creates the next oScheduler.mark_task_complete(), Task.mark_complete()ccurrence for daily or weekly tasks. Daily tasks move forward by 1 day and weekly tasks by 7 days. |
