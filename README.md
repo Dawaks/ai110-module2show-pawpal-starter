@@ -63,11 +63,8 @@ produces:
 Today's Schedule
 ----------------
 07:00  Luna - Breakfast (daily)
-
 08:00  Rex - Morning walk (daily)
-
 12:00  Luna - Brush fur (weekly)
-
 18:30  Rex - Evening walk (daily)
 ```
 
