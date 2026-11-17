@@ -18,6 +18,9 @@ classDiagram
         +time
         +frequency
         +completed
+        +due_date
+        +duration_minutes
+        +priority
         +mark_complete()
     }
 
@@ -26,6 +29,7 @@ classDiagram
         +sort_by_time()
         +filter_tasks(completed, pet_name)
         +detect_conflicts()
+        +mark_task_complete(pet, task)
     }
 
     Owner "1" --> "*" Pet : has
