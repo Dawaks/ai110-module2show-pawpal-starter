@@ -22,37 +22,23 @@ Your final app should:
 - Display the plan clearly (and ideally explain the reasoning)
 - Include tests for the most important scheduling behaviors
 
-## Getting started
-# PawPal+ (Module 2 Project)
-
-You are building **PawPal+**, a Streamlit app that helps a pet owner plan care tasks for their pet.
-
-## Scenario
-
-...
-
-## What you will build
-
-...
-
 ## Implementation Summary
 
 PawPal+ uses four main classes that work together to manage pet care tasks. The `Owner` class manages multiple pets, while each `Pet` stores its own list of `Task` objects. The `Scheduler` collects tasks across all of the owner's pets and provides basic scheduling features such as sorting tasks by time, filtering tasks by pet or completion status, and identifying tasks scheduled at the same time.
 
 The backend logic is tested through a command-line demo before being connected to the Streamlit interface.
 
+## Getting started
 
-### Setup
-
-...
 ### Setup
 
 ```bash
 python -m venv .venv
-source .venv/bin/activate  # Windows: .venv\Scripts\activate
+source .venv/bin/activate  
 pip install -r requirements.txt
-```
 
+# Windows: .venv\Scripts\activate
+```
 ### Suggested workflow
 
 1. Read the scenario carefully and identify requirements and edge cases.
@@ -64,9 +50,6 @@ pip install -r requirements.txt
 7. Refine UML so it matches what you actually built.
 
 ## 🖥️ Sample Output
-
-Paste a sample of your app's CLI or Streamlit output here so a reader can see what a generated plan looks like:
-
 
 Running:
 
@@ -84,13 +67,6 @@ Today's Schedule
 12:00  Luna - Brush fur (weekly)
 18:30  Rex - Evening walk (daily)
 ```
-```
-# e.g.:
-# Daily plan for Biscuit (Golden Retriever):
-#   08:00 — Morning walk (30 min) [priority: high]
-#   09:00 — Feeding (10 min) [priority: high]
-#   ...
-```
 
 ## 🧪 Testing PawPal+
 
@@ -105,7 +81,7 @@ pytest --cov
 Sample test output:
 
 ```
-# Paste your pytest output here
+# 2 passed in 0.07s
 ```
 
 ## 📐 Smarter Scheduling
@@ -114,9 +90,9 @@ Sample test output:
 
 | Feature | Method(s) | Notes |
 |---------|-----------|-------|
-| Task sorting | | e.g., by priority, duration |
-| Filtering | | e.g., skip tasks if time runs out |
-| Conflict handling | | e.g., overlapping time slots |
+| Task sorting | Scheduler.sort_by_time() | Sorts tasks by time |
+| Filtering | Scheduler.filter_tasks() | Filters by pet or completion status |
+| Conflict handling | Scheduler.detect_conflicts() | Detects exact-time conflicts |
 | Recurring tasks | | e.g., daily vs. weekly |
 
 ## 📸 Demo Walkthrough
