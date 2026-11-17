@@ -81,10 +81,12 @@ I would test weekly recurrence, pets with no tasks, invalid or inconsistent time
 
 - What part of this project are you most satisfied with?
 I am most satisfied with how the classes work together without becoming overly complicated. The Owner provides access to tasks across multiple pets, while the Scheduler handles sorting, filtering, recurrence, and conflict detection. I also like that I built and tested the backend logic before connecting it to the Streamlit interface.
+
 **b. What you would improve**
 
 - If you had another iteration, what would you improve or redesign?
 I would improve the scheduling logic by adding task duration and priority. This would allow the scheduler to detect overlapping tasks instead of only exact-time conflicts and make better decisions about which activities should be completed first. I would also consider stronger validation for time and date inputs.
+
 **c. Key takeaway**
 
 - What is one important thing you learned about designing systems or working with AI on this project?
