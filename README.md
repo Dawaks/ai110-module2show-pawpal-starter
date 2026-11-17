@@ -23,7 +23,28 @@ Your final app should:
 - Include tests for the most important scheduling behaviors
 
 ## Getting started
+# PawPal+ (Module 2 Project)
 
+You are building **PawPal+**, a Streamlit app that helps a pet owner plan care tasks for their pet.
+
+## Scenario
+
+...
+
+## What you will build
+
+...
+
+## Implementation Summary
+
+PawPal+ uses four main classes that work together to manage pet care tasks. The `Owner` class manages multiple pets, while each `Pet` stores its own list of `Task` objects. The `Scheduler` collects tasks across all of the owner's pets and provides basic scheduling features such as sorting tasks by time, filtering tasks by pet or completion status, and identifying tasks scheduled at the same time.
+
+The backend logic is tested through a command-line demo before being connected to the Streamlit interface.
+
+
+### Setup
+
+...
 ### Setup
 
 ```bash
@@ -46,7 +67,6 @@ pip install -r requirements.txt
 
 Paste a sample of your app's CLI or Streamlit output here so a reader can see what a generated plan looks like:
 
-## Sample Output
 
 Running:
 
